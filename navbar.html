@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="./public/css/styles.css">
+
+  <!-- ===== BOXICONS ===== -->
+  <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Dropdown Menu</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <a href="#" class="header__logo">Summer</a>
+
+    <div class="header__toggle">
+      <i class="bx bx-menu" id="header-toggle"></i>
+    </div>
+
+    <nav class="nav" id="nav-menu">
+
+      <div class="nav__content bd-grid">
+
+        <a href="" class="nav__perfil">
+
+          <div class="nav__img">
+            <img src="./public/img/perfil.jpg" alt="perfil">
+          </div>
+
+          <div>
+            <span class="nav__name">Summer</span>
+            <span class="nav__name">Schnauzer</span>
+          </div>
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link dropdown__link">About <i class="bx bx-chevron-down dropdown__icon"></i></a>
+
+              <ul class="dropdown__menu">
+                <li class="dropdown__item"><a href="" class="nav__link">About me</a></li>
+                <li class="dropdown__item"><a href="" class="nav__link">Location</a></li>
+                <li class="dropdown__item"><a href="" class="nav__link">Studies</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link dropdown__link">Works <i class="bx bx-chevron-down dropdown__icon"></i></a>
+
+              <ul class="dropdown__menu">
+                <li class="dropdown__item"><a href="" class="nav__link">Recent jobs</a></li>
+                <li class="dropdown__item"><a href="" class="nav__link">Better jobs</a></li>
+                <li class="dropdown__item"><a href="" class="nav__link">Work Awards</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- ===== NAVBAR JS ===== -->
+  <script src="./public/js/navbar.js"></script>
+</body>
+
+</html>
